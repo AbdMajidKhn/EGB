@@ -26,7 +26,80 @@
 
 .App-link {
   color: #61dafb;
+/* Base styles */
+.video-container,
+.text-container {
+  width: 100%;
+  height: 100vh;
 }
+
+.video-container {
+  position: relative;
+}
+
+.video-frame {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.brand-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 50%;
+  max-width: 50%;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.h1-title {
+  font-weight: 150;
+  font-size: 70px;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .video-container,
+  .text-container {
+    height: auto;
+  }
+
+  .video-frame {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .brand-logo {
+    max-height: 30%;
+    max-width: 30%;
+  }
+
+  .h1-title {
+    font-size: 40px; /* Smaller font size for mobile */
+  }
+
+  .text-container {
+    padding-top: 10%; /* Adjust padding for mobile */
+  }
+}
+}
+
 
 @keyframes App-logo-spin {
   from {

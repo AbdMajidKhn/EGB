@@ -34,6 +34,7 @@ function App() {
         // Fullscreen video with brand name 'EGB'
         <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
           <video
+          className="video-frame"
             autoPlay
             loop
             muted
@@ -43,6 +44,7 @@ function App() {
             Your browser does not support the video tag.
           </video>
           <img
+          className="brand-logo"
             src="/Logos/Logo.png"
             alt="Brand Logo"
             style={{
@@ -59,9 +61,10 @@ function App() {
         // Website content after the video
         <div style={{ width: '100%', height: '100vh', display: 'flex' }}>
           {/* Left side with video */}
-          <div style={{ width: '50%', height: '100%', position: 'relative' }}>
+          <div  className="video-container" style={{ width: '50%', height: '100%', position: 'relative' }}>
   <video
     id="videoFrame"
+    className="video-frame"
     title="Video Background"
     autoPlay
     loop
@@ -72,6 +75,7 @@ function App() {
     Your browser does not support the video tag.
   </video>
   <img
+  className="brand-logo"
     src="/Logos/Logo.png"
     alt="Brand Logo"
     style={{
@@ -89,6 +93,7 @@ function App() {
         
           {/* Right side with text */}
           <div
+          className="text-container"
             style={{
               flex: '1',
               backgroundColor: 'white',
@@ -99,7 +104,7 @@ function App() {
             }}
           >
             <h1
-              className="h1 title"
+              className="h1-title"
               style={{
                 fontWeight: '150',
                 fontSize: '70px',
@@ -109,7 +114,7 @@ function App() {
                 margin: '0',
               }}
             >
-              We invest in high-margin, fast-growing financial technology companies across the globe.
+             Ever Green Is on a mission to use the world's resources more efficietly, and to create more energy-efficient and healthier homes and buildings.
             </h1>
           </div>
         </div>
