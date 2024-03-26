@@ -61,6 +61,25 @@
   justify-content: center;
   background-color: white;
 }
+.card {
+  transition: background-color 0.5s ease, transform 0.5s ease;
+  cursor: pointer; /* To indicate the card is interactive */
+}
+
+.card:hover {
+  background-color: white;
+  transform: translateY(-100px); /* Moves the card up when hovered */
+}
+
+.card:hover .card-content {
+  display: block;
+}
+
+.card-content {
+  display: none;
+  color: black; /* Ensures text is visible on a white background */
+}
+
 
 .h1-title {
   font-weight: 150;
