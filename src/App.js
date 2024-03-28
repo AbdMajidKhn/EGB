@@ -132,6 +132,8 @@ function App() {
                 fontFamily: 'Times New Roman, Times, serif',
                 padding: '20px',
                 margin: '0',
+                color: 'rgba(0, 0, 0, 0.55)'
+
               }}
             >
               Ever Green Is on a mission to use the world's resources more efficiently, and to create more energy-efficient and healthier homes and buildings.
@@ -147,12 +149,12 @@ function App() {
           autoPlay
           loop
           muted
-          style={{ width: '99.5%', height: '99%', objectFit: 'cover', marginTop: '10px', borderRadius: '20px' }}
+          style={{ width: '99.5%', height: '99%', objectFit: 'cover', marginTop: '100px', borderRadius: '20px' }}
         >
           <source src="/Videos/Moving_Gradient_Background.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div style={{ position: 'absolute', top: '0', left: '0', width: '99%', height: '99%', marginTop: '10px', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gridTemplateRows: 'repeat(9, 1fr)', gap: '15px', padding: '10px' }}>
+        <div style={{ position: 'absolute', top: '0', left: '0', width: '99%', height: '99%', marginTop: '100px', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gridTemplateRows: 'repeat(9, 1fr)', gap: '15px', padding: '10px' }}>
           {Array.from({ length: 16 }).map((_, index) => (
             <div
               key={index}
@@ -205,37 +207,53 @@ function App() {
           ))}
         </div>
       </div>
-      <div style={{ backgroundColor: 'white', padding: '20px', display: 'flex', height: '99%', display: 'flex' }}>
+      <div style={{ backgroundColor: 'white', padding: '20px', display: 'flex', height: '99%', display: 'flex', marginTop: '100px' }}>
+
+        <div style={{
+          fontWeight: '50',
+          width: '390px',
+          fontSize: '30px',
+          marginLeft: '500px',
+          fontStyle: 'normal',
+          fontFamily: 'Times New Roman, Times, serif',
+          padding: '20px',
+          marginTop: '20px',
+          color: 'rgba(0, 0, 0, 0.55)'
+        }}> 
+        <p>
+            Ever Green Is on a mission to use the world's
+            resources more efficiently, and to create more
+            energy-efficient and healthier homes and buildings.
+          </p>
         <p
-          // className="h1-title"
-          style={{
-            fontWeight: '50',
-            width: '30%',
-            fontSize: '20px',
-            fontStyle: 'normal',
-            fontFamily: 'Times New Roman, Times, serif',
-            padding: '20px',
-            margin: '0',
-          }}
+        style={{
+          width:'200px',
+          marginTop: '100px',
+
+        }}
         >
-          Ever Green Is on a mission to use the world's resources more efficiently, and to create more energy-efficient and healthier homes and buildings.
-        </p>
-        <div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+            A New World
+             Envisioned
+          </p>
+          </div>
+        <div style={{ marginTop: '90px', display: 'flex' }}><div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-end' }}>
           <div style={{ position: 'relative' }}>
-            <img src="/Images/Where_Green_Meets_Growth.png" alt="Where Green Meets Growth" style={{ width: '300px', height: '400px', alignSelf: 'center', marginTop: '205px', marginLeft: '500px', borderRadius: '20px', opacity: '0.8' }} />
-            <span style={{ width: '180px', position: 'absolute', top: '405px', left: '650px', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '24px', textAlign: 'center', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Where Green Meets Growth</span>
+            <img src="/Images/Where_Green_Meets_Growth.png" alt="Where Green Meets Growth" style={{ width: '300px', height: '400px', alignSelf: 'center', marginTop: '405px', marginLeft: '50px', borderRadius: '30px', opacity: '0.8' }} />
+            <span style={{ width: '180px', position: 'absolute', top: '605px', left: '200px', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '24px', textAlign: 'center', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Where Green Meets Growth</span>
           </div>
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-          <div style={{ position: 'relative' }}>
-            <img src="/Images/Redefining_a_Sustainable_Future.png" alt="Redefining a Sustainable Future" style={{ width: '300px', height: '400px', margin: '10px', marginRight: '50px', borderRadius: '20px', opacity: '0.8' }} />
-            <span style={{ position: 'absolute', top: '50%', left: '45%', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '24px', textAlign: 'center', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Redefining a Sustainable Future</span>
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div style={{ position: 'relative' }}>
+              <img src="/Images/Redefining_a_Sustainable_Future.png" alt="Redefining a Sustainable Future" style={{ width: '300px', height: '400px', margin: '10px', marginTop: '200px', marginRight: '50px', borderRadius: '30px', opacity: '0.8' }} />
+              <span style={{ position: 'absolute', top: '65%', left: '45%', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '24px', textAlign: 'center', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Redefining a Sustainable Future</span>
+            </div>
+            <div style={{ position: 'relative' }}>
+              <img src="/Images/EcoInnovate.png" alt="Eco-Innovate" style={{ width: '300px', height: '400px', margin: '10px', marginRight: '50px', borderRadius: '30px', opacity: '0.8' }} />
+              <span style={{ position: 'absolute', top: '50%', left: '46%', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '24px', textAlign: 'center', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Eco-Innovate</span>
+            </div>
           </div>
-          <div style={{ position: 'relative' }}>
-            <img src="/Images/EcoInnovate.png" alt="Eco-Innovate" style={{ width: '300px', height: '400px', margin: '10px', marginRight: '50px', borderRadius: '20px', opacity: '0.8' }} />
-            <span style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '24px', textAlign: 'center', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Eco-Innovate</span>
           </div>
-        </div>
+    <div></div>
       </div>
 
 
