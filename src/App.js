@@ -205,31 +205,40 @@ function App() {
           ))}
         </div>
       </div>
-      <div style={{ backgroundColor: 'white', padding: '20px', display: 'flex', height: '99%' , display: 'flex' }}>
-      <p
-              className="h1-title"
-              style={{
-                fontWeight: '50',
-                width:'30%',
-                fontSize: '20px',
-                fontStyle: 'normal',
-                fontFamily: 'Times New Roman, Times, serif',
-                padding: '20px',
-                margin: '0',
-              }}
-            >
-              Ever Green Is on a mission to use the world's resources more efficiently, and to create more energy-efficient and healthier homes and buildings.
-            </p>
-    <div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-end' }}>
-   
-   <img src="/Images/Where_Green_Meets_Growth.png" alt="Where Green Meets Growth" style={{ width: 'auto', maxHeight: '100px', alignSelf: 'center' , marginTop: '45px', marginLeft: '500px'}} />
- </div>
-  <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-    <img src="/Images/EcoInnovate.png" alt="Eco-Innovate" style={{ width: 'auto', maxHeight: '100px', margin: '10px' }} />
-    <img src="/Images/Redefining_a_Sustainable_Future.png" alt="Redefining a Sustainable Future" style={{ width: 'auto', maxHeight: '100px', margin: '10px' }} />
-  </div>
-  
-</div>
+      <div style={{ backgroundColor: 'white', padding: '20px', display: 'flex', height: '99%', display: 'flex' }}>
+        <p
+          // className="h1-title"
+          style={{
+            fontWeight: '50',
+            width: '30%',
+            fontSize: '20px',
+            fontStyle: 'normal',
+            fontFamily: 'Times New Roman, Times, serif',
+            padding: '20px',
+            margin: '0',
+          }}
+        >
+          Ever Green Is on a mission to use the world's resources more efficiently, and to create more energy-efficient and healthier homes and buildings.
+        </p>
+        <div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+          <div style={{ position: 'relative' }}>
+            <img src="/Images/Where_Green_Meets_Growth.png" alt="Where Green Meets Growth" style={{ width: '300px', height: '400px', alignSelf: 'center', marginTop: '205px', marginLeft: '500px', borderRadius: '20px', opacity: '0.8' }} />
+            <span style={{ width: '180px', position: 'absolute', top: '405px', left: '650px', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '24px', textAlign: 'center', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Where Green Meets Growth</span>
+          </div>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <div style={{ position: 'relative' }}>
+            <img src="/Images/Redefining_a_Sustainable_Future.png" alt="Redefining a Sustainable Future" style={{ width: '300px', height: '400px', margin: '10px', marginRight: '50px', borderRadius: '20px', opacity: '0.8' }} />
+            <span style={{ position: 'absolute', top: '50%', left: '45%', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '24px', textAlign: 'center', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Redefining a Sustainable Future</span>
+          </div>
+          <div style={{ position: 'relative' }}>
+            <img src="/Images/EcoInnovate.png" alt="Eco-Innovate" style={{ width: '300px', height: '400px', margin: '10px', marginRight: '50px', borderRadius: '20px', opacity: '0.8' }} />
+            <span style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '24px', textAlign: 'center', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Eco-Innovate</span>
+          </div>
+        </div>
+      </div>
+
+
 
 
 
