@@ -61,18 +61,33 @@ function LaptopApp() {
     }, []);
   
     const cardNames = [
-      'Eco-FRIENDLY Buildings', 'Major Advantages', 'A Complete Eco Cycle', 'Valuable Partnerships', 'Contact Us', 'Our Expertise', 'Company Profile', 'Sustainable Construction','Sustainable Design Phase','Sustainable Construction Phase', 'Sustainable Finished Product','Blogs','RENEWABLE ENERGY', 'SMART SYSTEMS', 'INNOVATIVE DESIGN', 'RECYCLING', 'ECO-FRIENDLY MATERIALS', 'EFFICIENT EQUIPMENT', 'INTEGRATED SOLUTIONS', 'PREDICTIVE MAINTENANCE', 
+      'Eco-FRIENDLY Buildings', 'Major Advantages', 'A Complete Eco Cycle', 'Our Expertise', 'Sustainable Building', 'Sustainable Design Phase', ' Sustainable Construction Phase', 'Sustainable Finished Product','Company Profile','Blogs', 'Valuable Partnerships','Contact Us','RENEWABLE ENERGY', 'Smart Systems', 'Innovative Designs', 'Recycling ', 'Eco Friendly Materials', 'Efficient Equipment', 'Integrated Solutions', 'Predictive Maintenance', 
     ];
-    const cardNames1 = [
+    // const cardNames1 = [
   
   
-      'Eco-FRIENDLY Buildings', 'Major Advantages', 'A Complete Eco Cycle', '', 'Contact Us', 'Our Expertise', 'Company Profile', 'Sustainable Construction','Sustainable Design Phase', 'Sustainable Construction Phase','Sustainable Finished Product','Blogs',' ', ' ', ' ', '', '', ' ', ' ', ' ', 
-    ];
+    //   'Eco-FRIENDLY Buildings', 'Major Advantages', 'A Complete Eco Cycle', '', 'Contact Us', 'Our Expertise', 'Company Profile', 'Sustainable Construction','Sustainable Design Phase', 'Sustainable Construction Phase','Sustainable Finished Product','Blogs',' ', ' ', ' ', '', '', ' ', ' ', ' ', 
+    // ];
     const details = [
       'Eco friendly green buildings are the future of construction and we are at the forefront of building with purpose ',
       'The benefits of Green buildings far outweigh all associated costs. In just a year, operating costs decrease by 10% and maintenance costs decrease by 20%. Also, eco-friendly buildings use 11% less water than conventional buildings. They are also key to preserve energy with 25% less energy consumption and are crucial to decrease CO2 emissions by more than 34%.',
       'ENTER Green Buildings provides a complete solution that starts from eco-friendly designs, to recycling waste, to the use of environmentally friendly building materials, to the selection of the most advanced smart systems, and to the maintenance of finished projects',
-      <img
+     'Eco-friendly designs Civil, Electrical, and Mechanical works Renewable energy and waste management  Recycling of construction materials', 
+     'Ensuring safety standards  Minimising schedule delays Preventing cost overrunsImproving profitability rates Automating data collection processes Alleviating front-end shortage ',
+     'Resource Efficiency Environmental Impact Health and Wellbeing Resilience and Adaptability',
+     'Material Selection and Procurement Energy efficiency and green technologies Water conservation and management Construction Waste Management',
+     'The end product of sustainable building incorporates systems that lead to a greener environmental impact, quality of indoor environment, long term durability and resistance. As well as, cost and lifecycle performance.',
+     'Company Profile',
+     <a
+     className="blog-link"
+     href="https://enterconstruction.ru/en/blog/"
+     target="_blank"
+     rel="noopener noreferrer"
+   >
+     Visit Our Blog
+   </a>
+   ,
+     <img
         // className="brand-logo"
         src="/Images/awrwef.png"
         alt="Brand Logo"
@@ -87,22 +102,7 @@ function LaptopApp() {
         }}
       />,
       'Email: admin@entergreenbuildings.com\nContact: 00971-564788746', // Updated for Contact Us
-      'Eco-friendly designs Civil, Electrical, and Mechanical works Renewable energy and waste management Recycling of construction materials  ',
-      'Company Profile',
-      'Ensuring safety standards Minimising schedule delays  Preventing cost overruns Improving profitability rates Automating data collection processes Alleviating front-end shortages',
-     'Resource Efficiency  Environmental Impact  Health and Wellbeing Resilience and Adaptability',
-     'Material Selection and Procurement Energy efficiency and green technologies Water conservation and management Construction Waste Management',
-     'The end product of sustainable building incorporates systems that lead to a greener environmental impact, quality of indoor environment, long term durability and resistance. As well as, cost and lifecycle performance.',
-     <a
-     className="blog-link"
-     href="https://enterconstruction.ru/en/blog/"
-     target="_blank"
-     rel="noopener noreferrer"
-   >
-     Visit Our Blog
-   </a>
-  ,
-     <img
+      <img
         // className=?"brand-logo"
         src="/Images/RENEWABL_ ENERGY.png"
         alt="Brand Logo"
@@ -313,8 +313,8 @@ function LaptopApp() {
                   letterSpacing: '-.06rem',
                   lineHeight: '1',
                   fontStyle: 'normal',
-                  fontFamily: 'Canela,serif',
-                  padding: '20px',
+                  fontFamily: 'Panton, sans-serif',         
+                           padding: '20px',
                   margin: '0',
                   color: 'rgba(0, 0, 0, 0.55)'
   
@@ -325,7 +325,7 @@ function LaptopApp() {
             </div>
           </div>
         )}
-        <div className="video-container" style={{ width: '100%', height: '254vh', position: 'relative', borderRadius: '20px' }}>
+        <div className="video-container" style={{ width: '100%', height: '314vh', position: 'relative', borderRadius: '20px' }}>
           <video
             id="videoFrame"
             className="video-frame"
@@ -376,16 +376,16 @@ function LaptopApp() {
                       transition: 'background-color 0.3s ease-in-out',
                     }}
                   >
-                    <p style={{ fontFamily: 'Canela,serif', fontWeight: 'bold', fontSize: '24px', color: 'grey', position: 'absolute', top: '0', left: '5%' }}>
+                    {/* <p style={{ fontFamily: 'Canela,serif', fontWeight: 'bold', fontSize: '24px', color: 'grey', position: 'absolute', top: '0', left: '5%' }}>
                       {cardNames1[index]}
-                    </p>
-                    <p style={{ fontFamily: 'Canela,serif', fontWeight: 'normal', fontSize: '16px', color: 'grey', textAlign: 'center', width: '300px' }}>
+                    </p> */}
+                    <p style={{ fontFamily: 'Lemon Milk, sans-serif', fontWeight: 'normal', fontSize: '16px', color: 'grey', textAlign: 'center', width: '300px' }}>
                       {details[index]}
                       
                     </p>
                   </div>
                 )}
-                <p style={{ fontFamily: 'Canela,serif', fontWeight: 'bold', fontSize: '24px', color: 'white' }}>
+                <p style={{ fontFamily: 'Lemon Milk, sans-serif', fontWeight: 'bold', fontSize: '24px', color: 'white' }}>
                   {cardNames[index]}
                 </p>
               </div>
@@ -400,8 +400,8 @@ function LaptopApp() {
             fontSize: '30px',
             marginLeft: '400px',
             fontStyle: 'normal',
-            fontFamily: 'Canela,serif',
-            padding: '20px',
+            fontFamily: 'Panton, sans-serif',
+                        padding: '20px',
             marginTop: '100px',
             color: 'rgba(0, 0, 0, 0.55)'
           }}>
