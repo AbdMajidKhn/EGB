@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link component
 
 function MobileApp() {
     const [showVideo, setShowVideo] = useState(true);
@@ -54,8 +55,8 @@ function MobileApp() {
         setSelectedCard(index);
     };
     const cardNames = [
-        'Eco-FRIENDLY Buildings', 'Major Advantages', 'A Complete Eco Cycle', 'Valuable Partnerships', 'Contact Us', 'Our Expertise', 'Company Profile', 'Sustainable Construction', 'Sustainable Design Phase', 'Sustainable Construction Phase', 'Sustainable Finished Product', 'Blogs', 'RENEWABLE ENERGY', 'SMART SYSTEMS', 'INNOVATIVE DESIGN', 'RECYCLING', 'ECO-FRIENDLY MATERIALS', 'EFFICIENT EQUIPMENT', 'INTEGRATED SOLUTIONS', 'PREDICTIVE MAINTENANCE',
-    ];
+        'Eco-FRIENDLY Buildings', 'Major Advantages', 'A Complete Eco Cycle', 'Our Expertise', 'Sustainable Building', 'Sustainable Design Phase', ' Sustainable Construction Phase', 'Sustainable Finished Product', 'Company Profile', 'Blogs', 'Valuable Partnerships', 'Contact Us', 'RENEWABLE ENERGY', 'Smart Systems', 'Innovative Designs', 'Recycling ', 'Eco Friendly Materials', 'Efficient Equipment', 'Integrated Solutions', 'Predictive Maintenance',
+      ];
     // const cardNames1 = [
 
 
@@ -65,22 +66,23 @@ function MobileApp() {
         'Eco friendly green buildings are the future of construction and we are at the forefront of building with purpose ',
         'The benefits of Green buildings far outweigh all associated costs. In just a year, operating costs decrease by 10% and maintenance costs decrease by 20%. Also, eco-friendly buildings use 11% less water than conventional buildings. They are also key to preserve energy with 25% less energy consumption and are crucial to decrease CO2 emissions by more than 34%.',
         'ENTER Green Buildings provides a complete solution that starts from eco-friendly designs, to recycling waste, to the use of environmentally friendly building materials, to the selection of the most advanced smart systems, and to the maintenance of finished projects',
-       'Eco-friendly designs Civil, Electrical, and Mechanical works Renewable energy and waste management  Recycling of construction materials', 
-       'Ensuring safety standards  Minimising schedule delays Preventing cost overrunsImproving profitability rates Automating data collection processes Alleviating front-end shortage ',
-       'Resource Efficiency Environmental Impact Health and Wellbeing Resilience and Adaptability',
-       'Material Selection and Procurement Energy efficiency and green technologies Water conservation and management Construction Waste Management',
-       'The end product of sustainable building incorporates systems that lead to a greener environmental impact, quality of indoor environment, long term durability and resistance. As well as, cost and lifecycle performance.',
-       'Company Profile',
-       <a
-       className="blog-link"
-       href="https://enterconstruction.ru/en/blog/"
-       target="_blank"
-       rel="noopener noreferrer"
-     >
-       Visit Our Blog
-     </a>
-     ,
-       <img
+        'Eco-friendly designs Civil, Electrical, and Mechanical works Renewable energy and waste management  Recycling of construction materials',
+        'Ensuring safety standards  Minimising schedule delays Preventing cost overrunsImproving profitability rates Automating data collection processes Alleviating front-end shortage ',
+        'Resource Efficiency Environmental Impact Health and Wellbeing Resilience and Adaptability',
+        'Material Selection and Procurement Energy efficiency and green technologies Water conservation and management Construction Waste Management',
+        'The end product of sustainable building incorporates systems that lead to a greener environmental impact, quality of indoor environment, long term durability and resistance. As well as, cost and lifecycle performance.',
+        'Company Profile',
+         <Link to="/blog" style={{ 
+          display: 'inline-block',
+          padding: '10px 20px',
+          textDecoration: 'none',
+          color: '#fff',
+          backgroundColor: '#007bff',
+          border: '1px solid #007bff',
+          borderRadius: '5px',
+          transition: 'background-color 0.3s',
+        }}>Visit Our Blog</Link>,
+        <img
           // className="brand-logo"
           src="/Images/awrwef.png"
           alt="Brand Logo"
@@ -91,6 +93,7 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
+            borderRadius: '20px'
           }}
         />,
         'Email: admin@entergreenbuildings.com\nContact: 00971-564788746', // Updated for Contact Us
@@ -105,21 +108,23 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
+            borderRadius: '20px'
           }}
         />,
         <img
-      // className="brand-logo"
-      src="Images/Smart_System.png"
-      alt="Brand Logo"
-      style={{
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        height: '100%',
-        width: '100%',
-      }}
-    />,
+          // className="brand-logo"
+          src="Images/Smart_System.png"
+          alt="Brand Logo"
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            height: '100%',
+            width: '100%',
+            borderRadius: '20px'
+          }}
+        />,
     
         <img
           // className="brand-logo"
@@ -132,6 +137,7 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
+            borderRadius: '20px'
           }}
         />,
         <img
@@ -145,6 +151,7 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
+            borderRadius: '20px'
           }}
         />,
         <img
@@ -158,6 +165,7 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
+            borderRadius: '20px'
           }}
         />,
         <img
@@ -171,6 +179,7 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
+            borderRadius: '20px'
           }}
         />,
         <img
@@ -184,6 +193,7 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
+            borderRadius: '20px'
           }}
         />,
         <img
@@ -197,6 +207,7 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
+            borderRadius: '20px'
           }}
         />,
       ];

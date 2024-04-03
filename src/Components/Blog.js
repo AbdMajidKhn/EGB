@@ -9,6 +9,7 @@ function Blog() {
 
             <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
                 <img
+                    className='blog-Image'
                     src="/Images/RENEWABL_ ENERGY.png"
                     alt="Renewable Energy"
                     style={{
@@ -18,6 +19,8 @@ function Blog() {
                     }}
                 />
                 <img
+                    className='blog-Image'
+
                     src="Images/Smart_System.png"
                     alt="Smart System"
                     style={{
@@ -27,6 +30,8 @@ function Blog() {
                     }}
                 />
                 <img
+                    className='blog-Image'
+
                     src="Images/Innovative_Design.png"
                     alt="Innovative Design"
                     style={{
@@ -36,6 +41,49 @@ function Blog() {
                     }}
                 />
                 <img
+                    className='blog-Image'
+
+                    src="Images/Recycling.png"
+                    alt="Recycling"
+                    style={{
+                        width: '22%', // Adjusted for four images in one line
+                        borderRadius: '20px',
+                        margin: '0.5rem'
+                    }}
+                />
+                <img
+                    src="Images/Recycling.png"
+                    alt="Recycling"
+                    style={{
+                        width: '22%', // Adjusted for four images in one line
+                        borderRadius: '20px',
+                        margin: '0.5rem'
+                    }}
+                />
+                <img className='blog-Image'
+
+                    src="Images/Recycling.png"
+                    alt="Recycling"
+                    style={{
+                        width: '22%', // Adjusted for four images in one line
+                        borderRadius: '20px',
+                        margin: '0.5rem'
+                    }}
+                />
+                <img
+                    className='blog-Image'
+
+                    src="Images/Recycling.png"
+                    alt="Recycling"
+                    style={{
+                        width: '22%', // Adjusted for four images in one line
+                        borderRadius: '20px',
+                        margin: '0.5rem'
+                    }}
+                />
+                <img
+                    className='blog-Image'
+
                     src="Images/Recycling.png"
                     alt="Recycling"
                     style={{
