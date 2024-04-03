@@ -265,7 +265,7 @@ function MobileApp() {
                            fontSize: '1.65rem', // Adjust as needed
                             lineHeight: '1.5' // Adjust for better readability
                         }}>
-                            Ever Green is on a mission to use the world's resources more efficiently, and to create more energy-efficient and healthier homes and buildings.
+                            Enter Green is on a mission to use the world's resources more efficiently, and to create more energy-efficient and healthier homes and buildings.
                         </p>
                     </div>
                 )}
@@ -344,7 +344,7 @@ function MobileApp() {
                     marginBottom: '20px',
                 }}>
                     <p style={{ marginTop: '20px', width: '50%' }}>
-                        Ever Green Is on a mission to use the world's
+                        Enter Green Is on a mission to use the world's
                         resources more efficiently, and to create more
                         energy-efficient and healthier homes and buildings.
                     </p>

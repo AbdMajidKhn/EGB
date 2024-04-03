@@ -1,12 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LaptopApp from './Components/LaptopApp';
 import MobileApp from './Components/MobileApp';
-function App(){
+import Blog from './Components/Blog';
+import './App.css';
+import i18n from './i18n';
 
-    const isMobile = window.matchMedia("(max-width: 767px)").matches;
+function App() {
+  const isMobile = window.matchMedia("(max-width: 767px)").matches;
 
-    return isMobile ? <MobileApp /> : <LaptopApp />;
+  return (
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          {/* Routes for different components */}
+          <Route path="/" element={isMobile ? <MobileApp /> : <LaptopApp />} />
+          <Route path="/Blog" element={<Blog />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;

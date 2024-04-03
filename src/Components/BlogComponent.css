@@ -1,0 +1,20 @@
+.blog-component {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .blog-title {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .blog-text {
+    margin: 1rem 0;
+  }
+  
+  .blog-images img {
+    width: 45%; /* Adjust the width as needed */
+    margin: 0.5rem; /* Spacing between images */
+  }
+  
