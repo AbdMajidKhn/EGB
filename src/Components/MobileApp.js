@@ -31,7 +31,13 @@ function MobileApp() {
         setImageOpacities({ ...imageOpacities, [imageId]: 0.8 });
     };
 
-
+    useEffect(() => {
+        const timer = setTimeout(() => {
+          setShowVideo(true);
+        }, 2000);
+    
+        return () => clearTimeout(timer);
+      }, []);
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowText(true); // Set to true after initial load
@@ -93,7 +99,6 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
-            borderRadius: '20px'
           }}
         />,
         'Email: admin@entergreenbuildings.com\nContact: 00971-564788746', // Updated for Contact Us
@@ -108,7 +113,6 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
-            borderRadius: '20px'
           }}
         />,
         <img
@@ -122,7 +126,6 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
-            borderRadius: '20px'
           }}
         />,
     
@@ -137,7 +140,6 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
-            borderRadius: '20px'
           }}
         />,
         <img
@@ -151,7 +153,6 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
-            borderRadius: '20px'
           }}
         />,
         <img
@@ -165,7 +166,6 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
-            borderRadius: '20px'
           }}
         />,
         <img
@@ -179,7 +179,6 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
-            borderRadius: '20px'
           }}
         />,
         <img
@@ -193,7 +192,6 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
-            borderRadius: '20px'
           }}
         />,
         <img
@@ -207,7 +205,6 @@ function MobileApp() {
             transform: 'translate(-50%, -50%)',
             height: '100%',
             width: '100%',
-            borderRadius: '20px'
           }}
         />,
       ];
@@ -224,13 +221,12 @@ function MobileApp() {
                         transition: 'width 0.5s, height 0.5s',
                     }}>
                         <video
-                            className="video-frame"
+                            // className="video-frame"
                             autoPlay
                             loop
                             muted
                             style={{
-                                marginTop: '20px',
-                                width: '100%',
+                                marginTop: showVideo ? '0px' : '20px',                                width: '100%',
                                 height: '100%',
                                 objectFit: 'cover',
                                 borderRadius: '15px'
@@ -283,8 +279,8 @@ function MobileApp() {
             </div>
             <div className="video-container" style={{ width: '100%', height: '378.5vh', position: 'relative',marginTop:'60px' ,borderRadius: showVideo ? '0px' : '15px' }}>
                 <video
-                    id="videoFrame"
-                    className="video-frame"
+                    // id="videoFrame"
+                    // className="video-frame"
                     title="Video Background"
                     autoPlay
                     loop
