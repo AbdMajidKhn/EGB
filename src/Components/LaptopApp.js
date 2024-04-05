@@ -62,7 +62,7 @@ function LaptopApp() {
   }, []);
 
   const cardNames = [
-    'Eco-FRIENDLY Buildings', 'Major Advantages', 'A Complete Eco Cycle', 'Our Expertise', 'Sustainable Building', 'Sustainable Design Phase', ' Sustainable Construction Phase', 'Sustainable Finished Product', 'Company Profile', 'Blogs', 'Valuable Partnerships', 'Contact Us', 'RENEWABLE ENERGY', 'Smart Systems', 'Innovative Designs', 'Recycling ', 'Eco Friendly Materials', 'Efficient Equipment', 'Integrated Solutions', 'Predictive Maintenance',
+    'Eco-friendly Buildings', 'Major Advantages', 'A Complete Eco Cycle', 'Our Expertise', 'Sustainable Building', 'Sustainable Design Phase', ' Sustainable Construction Phase', 'Sustainable Finished Product', 'Company Profile', 'Blogs', 'Valuable Partnerships', 'Contact Us', 'Renewable Energy', 'Smart Systems', 'Innovative Designs', 'Recycling ', 'Eco Friendly Materials', 'Efficient Equipment', 'Integrated Solutions', 'Predictive Maintenance',
   ];
   // const cardNames1 = [
 
@@ -79,7 +79,7 @@ function LaptopApp() {
     'Material Selection and Procurement Energy efficiency and green technologies Water conservation and management Construction Waste Management',
     'The end product of sustainable building incorporates systems that lead to a greener environmental impact, quality of indoor environment, long term durability and resistance. As well as, cost and lifecycle performance.',
     'Company Profile',
-     <Link to="/blog" style={{ 
+    <Link to="/blog" style={{
       display: 'inline-block',
       padding: '10px 20px',
       textDecoration: 'none',
@@ -262,7 +262,7 @@ function LaptopApp() {
         </div>
       ) : (
         <div className="app-container" style={{ width: '100%', height: '100vh', display: 'flex' }}>
-          <div className="video-container" style={{ width: videoWidth, height: '900px', position: 'relative', opacity: '1.5' }}>
+          <div className="video-container" style={{ width: videoWidth, height: '1200px', position: 'relative', opacity: '1.5' }}>
             <video
               id="videoFrame"
               className="video-frame"
@@ -295,23 +295,24 @@ function LaptopApp() {
               flex: '1',
               backgroundColor: 'white',
               display: 'flex',
+              flexDirection: 'column', // Arrange children vertically
               alignItems: 'center',
-              justifyContent: 'center',
               paddingTop: '3%',
               transition: 'opacity 0.5s ease-in-out',
               opacity: 1,
               translate: 'none',
               rotate: 'none',
               visibility: 'inherit',
-              transform: 'translate(0px,0px)'
-
+              transform: `translate(${videoWidth === '50%' ? '0' : videoWidth}, 0px)`, // Adjusted transform property
+              textAlign: 'start'
             }}
           >
+
             <h1
-              className="h1-title"
+              className="h3-title"
               style={{
-                fontWeight: '150',
-                fontSize: '3.3rem',
+                fontWeight: '100',
+                fontSize: '2.8rem', // Smaller font size for h3
                 letterSpacing: '-.06rem',
                 lineHeight: '1',
                 fontStyle: 'normal',
@@ -319,15 +320,16 @@ function LaptopApp() {
                 padding: '20px',
                 margin: '0',
                 color: 'rgba(0, 0, 0, 0.55)'
-
               }}
             >
-              Enter Green Is on a mission to use the world's resources more efficiently, and to create more energy-efficient and healthier homes and buildings.
+              We build with the environment in mind Eco-friendly green buildings are the future of construction and we are at the forefront of building with purpose.
             </h1>
           </div>
+
+
         </div>
       )}
-      <div className="video-container" style={{ width: '100%', height: '314vh', position: 'relative', borderRadius: '20px' }}>
+      <div className="video-container" style={{ width: '100%', height: '228vh', position: 'relative', borderRadius: '20px' }}>
         <video
           id="videoFrame"
           className="video-frame"
@@ -394,35 +396,38 @@ function LaptopApp() {
           ))}
         </div>
       </div>
-      <div style={{ backgroundColor: 'white', padding: '20px', display: 'flex', height: '99%', display: 'flex', marginTop: '0px' }}>
-
+      <div style={{ backgroundColor: 'white', padding: '20px', display: 'flex', height: '99%', }}>
         <div style={{
-          fontWeight: '50',
-          width: '390px',
+          marginTop: '90px',
+          width: '60%',
           fontSize: '30px',
-          marginLeft: '400px',
           fontStyle: 'normal',
           fontFamily: 'Panton, sans-serif',
           padding: '20px',
           marginTop: '100px',
-          color: 'rgba(0, 0, 0, 0.55)'
+          color: 'rgba(0, 0, 0, 0.55)',
         }}>
-          <p>
-            Enter Green Is on a mission to use the world's
+          <p
+            style={{
+              width: '90%', // Adjusted width
+              marginTop: '20px',
+              textAlign: 'left'// Adjusted spacing
+            }}>
+            Enter Green Building is on a mission to use the world's
             resources more efficiently, and to create more
             energy-efficient and healthier homes and buildings.
           </p>
           <p
             style={{
-              width: '200px',
-              marginTop: '100px',
-
+              width: '90%', // Adjusted width
+              marginTop: '20px',
+              textAlign: 'left'// Adjusted spacing
             }}
           >
-            A New World
-            Envisioned
+            A New World Envisioned
           </p>
         </div>
+
         <div style={{ marginTop: '90px', display: 'flex' }}>
           <div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-end' }}>
             <div style={{ position: 'relative' }}>
