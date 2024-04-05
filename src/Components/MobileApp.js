@@ -351,7 +351,7 @@ function MobileApp() {
                     marginBottom: '20px',
                 }}>
                     <p style={{ marginTop: '20px', width: '50%' }}>
-                        Enter Green Is on a mission to use the world's
+                        Enter Green building is on a mission to use the world's
                         resources more efficiently, and to create more
                         energy-efficient and healthier homes and buildings.
                     </p>
