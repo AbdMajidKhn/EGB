@@ -277,7 +277,7 @@ function MobileApp() {
                     </div>
                 )}
             </div>
-            <div className="video-container" style={{ width: '100%', height: '280.5vh', position: 'relative',marginTop:'60px' ,borderRadius: showVideo ? '0px' : '15px' }}>
+            <div className="video-container" style={{ width: '100%', height: '300.5vh', position: 'relative',marginTop:'60px' ,borderRadius: showVideo ? '0px' : '15px' }}>
                 <video
                     // id="videoFrame"
                     // className="video-frame"
@@ -328,7 +328,7 @@ function MobileApp() {
                                         transition: 'background-color 0.3s ease-in-out',
                                     }}
                                 >
-                                    <p style={{ fontFamily: 'Lemon Milk, sans-serif', fontWeight: 'normal', fontSize: '0.8rem', color: 'grey', textAlign: 'center', width: '200px' }}>
+                                    <p style={{ fontFamily: 'Lemon Milk, sans-serif', fontWeight: 'normal', fontSize: '0.7rem', color: 'grey', textAlign: 'center', width: '200px' }}>
                                         {details[index]}
                                     </p>
                                 </div>
