@@ -272,12 +272,12 @@ function MobileApp() {
                            fontSize: '1.65rem', // Adjust as needed
                             lineHeight: '1.5' // Adjust for better readability
                         }}>
-                            Enter Green is on a mission to use the world's resources more efficiently, and to create more energy-efficient and healthier homes and buildings.
+                            Enter Green building is on a mission to use the world's resources more efficiently, and to create more energy-efficient and healthier homes and buildings.
                         </p>
                     </div>
                 )}
             </div>
-            <div className="video-container" style={{ width: '100%', height: '278.5vh', position: 'relative',marginTop:'60px' ,borderRadius: showVideo ? '0px' : '15px' }}>
+            <div className="video-container" style={{ width: '100%', height: '280.5vh', position: 'relative',marginTop:'60px' ,borderRadius: showVideo ? '0px' : '15px' }}>
                 <video
                     // id="videoFrame"
                     // className="video-frame"
@@ -341,7 +341,7 @@ function MobileApp() {
                 </div>
             </div>
 
-            <div style={{ backgroundColor: 'white', padding: '20px', display: 'flex', flexDirection: 'column', marginTop: '0px', alignItems: 'flex-start' }}>
+            <div style={{ backgroundColor: 'white', padding: '20px', display: 'flex', flexDirection: 'column', marginTop: '100px', alignItems: 'flex-start' }}>
                 <div style={{
                     color: 'black',
                     textAlign: 'left',
